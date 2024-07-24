@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+        .header h1 {
+            margin: 0 0 0 20px;
+        }
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+        .menu {
+            display: none;
+            flex-direction: column;
+            background-color: #333;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        .menu a:hover {
+            background-color: #575757;
+        }
+        .container {
+            flex: 1;
+            padding: 20px;
+        }
+        .contact-info {
+            margin: 20px 0;
+        }
+        .footer {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <h1>Contact Us</h1>
+    </div>
+    <div class="menu" id="menu">
+        <a href="Home.html">Homepage</a>
+        <a href="Aboutus.html">About Us</a>
+    </div>
+    <div class="container">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <h2>For prayers and councelling you can contact the numbers below.<br>For  tyth and offertory on airtel and mtn you can donate to the following numbers listed below</h2>
+            <p>Phone: +256702794346</p>
+            <p>Phone: +256775858040</p>
+            <p>Email: <a href="mailto:nuwasiimacoleb040@gmail.com">nuwasiimacoleb040@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer">
+        
+        <div>Follow Us click any of these social icons below to go to our church page</div>
+        <div class="social-icons">
+            <a href="https://facebook.com/share/gPuryLsssa1UAJku/?mibextid=qi20mg" target="_blank">Facebook</a>
+            <a href="https://www.youtube.com/@pastornuwasiimacoleb4610?si=TJmN9s9ipiwEKD8j" target="_blank">YouTube</a>
+            <a href="nuwasiimacoleb040@gmail.com">Gmail</a>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "none" || menu.style.display === "") {
+                menu.style.display = "flex";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
